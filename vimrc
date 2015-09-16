@@ -112,7 +112,7 @@ inoremap jk <esc>
 inoremap kj <esc>
 
 "autocmd vimenter * if !argc() | NERDTree | endif
-map <C-e> :NERDTreeToggle<CR>
+map <C-e> :NERDTreeTabsToggle<CR>
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_working_path_mode = 'ra'
@@ -121,6 +121,7 @@ nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
 nnoremap <c-h> <c-w>h
 nnoremap <c-l> <c-w>l
+map <Leader>p :set paste<CR>o<esc>"*]p:set nopaste<cr>
 
 "http://www.kevinberridge.com/2010/10/vim-escape.html
 imap jk <esc>
